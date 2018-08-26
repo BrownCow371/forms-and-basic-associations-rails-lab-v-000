@@ -21,7 +21,7 @@ class Song < ActiveRecord::Base
 
   def notes_values=(values)
     values.each do |value|
-      self.notes_build(content: value) if value
+      self.notes.create(content: value) if value
     end
   end
 

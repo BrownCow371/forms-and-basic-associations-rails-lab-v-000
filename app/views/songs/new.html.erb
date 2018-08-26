@@ -11,6 +11,7 @@
 
   <%= f.label :genre_name %>
   <%= f.collection_select :genre_name, Genre.all, :name, :name %>
+  <br />
 
   <%= f.submit %>
 <% end %>
